@@ -1,0 +1,10 @@
+diff a/.idea/workspace.xml b/.idea/workspace.xml	(rejected hunks)
+@@ -181,7 +181,7 @@
+   <component name="MavenRunner">
+     <option name="skipTests" value="true" />
+   </component>
+-  <component name="ProjectFrameBounds" extendedState="6">
++  <component name="ProjectFrameBounds" extendedState="7">
+     <option name="x" value="742" />
+     <option name="y" value="110" />
+     <option name="width" value="2192" />
