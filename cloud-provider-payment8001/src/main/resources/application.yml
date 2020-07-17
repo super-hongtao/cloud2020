@@ -10,7 +10,6 @@ spring:
     url: jdbc:mysql://localhost:3306/db2020?useUnicode=true&characterEncoding-utr-8&useSSL=false
     username: root
     password: x5
-
 eureka:
   client:
     #表示是否将自己注册进EurekaServer默认为true
@@ -19,10 +18,9 @@ eureka:
     fetch-registry: true
     service-url:
       #单机版
-      defaultZone: http://localhost:7001/eureka
+      #defaultZone: http://localhost:7001/eureka
       #Eureka集群版
-      #defaultZone: http://eureka7001.com:7001/eureka/,http://eureka7002.com:7002/eureka/,http://eureka7003.com:7003/eureka/
-
+      defaultZone: http://eureka7001.com:7001/eureka/,http://eureka7002.com:7002/eureka/,http://eureka7003.com:7003/eureka/
 mybatis:
   mapper-locations: classpath:mapper/*.xml
   type-aliases-package: com.ft.springcloud.entity      #所有Entity别名类所在包
