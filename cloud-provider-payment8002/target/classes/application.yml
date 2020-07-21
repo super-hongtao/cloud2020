@@ -21,8 +21,10 @@ eureka:
       #defaultZone: http://localhost:7001/eureka
       #Eureka集群版
       defaultZone: http://eureka7001.com:7001/eureka/,http://eureka7002.com:7002/eureka/,http://eureka7003.com:7003/eureka/
+      #微服务信息完善(定义名称，显示ip)
   instance:
       instance-id: payment8002
+      prefer-ip-address: true
 mybatis:
   mapper-locations: classpath:mapper/*.xml
   type-aliases-package: com.ft.springcloud.entity      #所有Entity别名类所在包
