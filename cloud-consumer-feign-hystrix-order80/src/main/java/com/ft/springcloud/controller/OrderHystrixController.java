@@ -30,20 +30,13 @@ public class OrderHystrixController {
         return  result;
     }
 
-    @GetMapping(value = "/consumer/payment/hystrix/timeout/{id}")
-    public String paymentInfo_Timeout(@PathVariable("id") Integer id){
-        String result = paymentHystrixService.paymentInfo_Timeout(id);
-        return result;
-    }
-
-
     @GetMapping("/consumer/payment/hystrix/timeout/{id}")
     @HystrixCommand(fallbackMethod = "paymentTimeOutFallBackMethod",commandProperties = {
             @HystrixProperty(name = "execution.isolation.thread.timeoutInMilliseconds",value = "1500")
     })
-    //@HystrixCommand
-    public String paymentInfo_TimeOut(@PathVariable("id") Integer id){
-        int age = 10/0;
+    public String paymentInfo_Timeout(@PathVariable("id") Integer id){
+
+        //int age = 10/0;    //设置运行异常
         return paymentHystrixService.paymentInfo_Timeout(id);
     }
 
