@@ -20,6 +20,14 @@ spring:
           uri: lb://cloud-payment-service          #匹配后提供服务的路由地址
           predicates:
             - Path=/payment/lb/**                 #断言，路径相匹配的进行路由
+          #  - After=2020-07-30T23:23:56.199+08:00[Asia/Shanghai]
+          #  - Before=2020-07-31T23:23:56.199+08:00[Asia/Shanghai]
+          #  - Between=2020-07-30T23:23:56.199+08:00[Asia/Shanghai],2020-07-31T23:23:56.199+08:00[Asia/Shanghai]
+          #  - Cookie=username,ht         #通过cmd命令curl http://localhost:9527/payment/lb --cookie username="ht"
+          #请求头要有X-Request-Id属性并且值为整数的正则表达式
+          #  - Header=X-Request-Id, \d+   #通过cmd命令curl http://localhost:9527/payment/lb -H"X-Request-Id:123"
+
+
 eureka:
   instance:
     hostname: cloud-gateway-service
