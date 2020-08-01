@@ -9,6 +9,7 @@
     </option>
     <option name="ignoredFiles">
       <set>
+        <option value="$PROJECT_DIR$/cloud-config-center-3355/pom.xml" />
         <option value="$PROJECT_DIR$/cloud-config-client-3355/pom.xml" />
         <option value="$PROJECT_DIR$/cloud-consumer-hystrix-dashboard9001/pom.xml" />
       </set>
