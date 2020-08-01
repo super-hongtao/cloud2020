@@ -28,6 +28,8 @@
       <module>cloud-config-client-3355</module>
       <module>cloud-config-center-3355</module>
     <module>cloud-config-center-3355</module>
+    <module>cloud-config-client-3355</module>
+      <module>cloud-config-client-3355</module>
   </modules>
   <packaging>pom</packaging>
 
